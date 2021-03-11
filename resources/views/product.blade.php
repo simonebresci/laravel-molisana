@@ -134,7 +134,23 @@ $array = json_decode($data, true);
     <title>Product</title>
   </head>
   <body>
-      Pagina product
-      {{$idProduct}}
+
+      {{-- Prodotto selezionato --}}
+      @foreach($array as $pasta)
+          @if($pasta["titolo"] === $idProduct)
+            <div class="pasta">
+              @php
+                $link = "/product/" . $pasta["titolo"];
+              @endphp
+              <a href="{{$link}}"> {{$pasta["titolo"]}} </a>
+              {{$pasta["tipo"]}} <br>
+              {{$pasta["cottura"]}} <br>
+              {{$pasta["peso"]}} <br>
+              {{$pasta["descrizione"]}} <br>
+            </div>
+          @endif
+      @endforeach
+      {{-- /Prodotto selezionato --}}
+
   </body>
 </html>

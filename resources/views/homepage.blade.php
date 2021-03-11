@@ -138,14 +138,24 @@ $array = json_decode($data, true);
     <title>Welcome Molisana</title>
   </head>
   <body>
-    Pagina di benvenuto progetto
-    <!-- Test db -->
-    @php
-      foreach($array as $pasta){
-        echo $pasta["titolo"] . "<br>";
-      }
-    @endphp
-    <!-- /Test db -->
+
+
+    @foreach($array as $pasta)
+      <div class="pasta">
+        @php
+          $link = "/product/" . $pasta["titolo"];
+        @endphp
+        <a href="{{$link}}"> {{$pasta["titolo"]}} </a>
+        {{$pasta["tipo"]}} <br>
+        {{$pasta["cottura"]}} <br>
+
+
+
+
+        <br> <br>
+      </div>
+
+    @endforeach
 
 
   </body>

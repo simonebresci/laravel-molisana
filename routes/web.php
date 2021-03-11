@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 // Test seconda pagina
-Route::get('/product', function () {
-    return view('product');
+Route::get('/product/{id}', function ($id) {
+    return view('product',
+                ["idProduct" => $id]);
 });

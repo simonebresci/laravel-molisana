@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
+});
+
+
+// Test seconda pagina
+Route::get('/product', function () {
+    return view('product');
 });

@@ -131,6 +131,10 @@ $array = json_decode($data, true);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    {{-- File css --}}
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
     <title>Welcome Molisana</title>
   </head>
   <body>

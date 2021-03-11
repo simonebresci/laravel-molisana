@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-@php
 $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -124,25 +122,3 @@ $data = '[
   ]';
 
 $array = json_decode($data, true);
-@endphp
-
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome Molisana</title>
-  </head>
-  <body>
-    Pagina di benvenuto progetto
-    <!-- Test db -->
-    @php
-      foreach($array as $pasta){
-        echo $pasta["titolo"] . "<br>";
-      }
-    @endphp
-    <!-- /Test db -->
-
-
-  </body>
-</html>

@@ -3,9 +3,14 @@
   box-sizing:border-box;
   margin:0;
   padding: 0;
-  background-color: lightblue;
+  background-color: rgba(125,125,255,0.5);
 }
 
+header, footer{
+  height: 200px;
+  background-color: green;
+  border: 2px solid black;
+}
 
 .pasta{
   display: inline-block;
@@ -14,8 +19,8 @@
   font-size: 18px;
   font-weight: bold;
   background-color: lightblue;
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   margin-right: 30px;
   margin-bottom: 30px;
 }

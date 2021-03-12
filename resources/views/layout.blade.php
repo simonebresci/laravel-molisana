@@ -5,7 +5,7 @@
 
     <!-- Inizializzazione larghezza device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     {{-- File css --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
@@ -24,7 +24,6 @@
                 <li>News</li>
               </ul>
           </div>
-
         </div>
 
 
@@ -36,7 +35,20 @@
 
 
       <footer>
-        Ciao sono footer!
+        <div class="footer-background">
+          <div class="footer-content">
+            <div class="footer-content-col-1">
+            <img class="footer-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
+            </div>
+            <div class="footer-content-col-2">
+
+            </div>
+            <div class="footer-content-col-3">
+
+            </div>
+
+          </div>
+        </div>
       </footer>
     </div>
 

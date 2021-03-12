@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-@php
+<?php
 $data = '[
   {
     "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -124,48 +123,4 @@ $data = '[
   ]';
 
 $array = json_decode($data, true);
-@endphp
-
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-
-    {{-- File css --}}
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-
-    <title>Welcome Molisana</title>
-  </head>
-  <body>
-    {{-- CONTAINER --}}
-    <div class="container">
-      {{-- HEADER --}}
-      @include('components.header')
-      {{-- /HEADER --}}
-
-      {{-- CONTENT --}}
-      @foreach($array as $pasta)
-        <div class="pasta">
-          @php
-            $link = "/product/" . $pasta["titolo"];
-          @endphp
-          <a href="{{$link}}"> {{$pasta["titolo"]}} </a>
-          {{$pasta["tipo"]}} <br>
-          {{$pasta["cottura"]}} <br>
-
-
-
-
-          <br> <br>
-        </div>
-
-      @endforeach
-
-      {{-- FOOTER --}}
-      @include('components.footer')
-      {{-- /FOOTER --}}
-    </div>
-
-  </body>
-</html>
+return $array;

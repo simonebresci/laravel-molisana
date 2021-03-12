@@ -14,12 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $pasta = config('pasta');
+
+    return view('homepage', ['pastaArray' => $pasta]);
 });
 
 
-// Test seconda pagina
+// Pagina product
 Route::get('/product/{id}', function ($id) {
+    $pasta = config('pasta');
+
     return view('product',
-                ["idProduct" => $id]);
+                [
+                  "idProduct" => $id,
+                  "pastaArray" => $pasta
+                ]);
 });

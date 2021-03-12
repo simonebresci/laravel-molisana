@@ -20,6 +20,7 @@ header, footer {
   background-color: lightblue;
   min-width: 200px;
   min-height: 200px;
+  padding: 15px;
   margin-right: 30px;
   margin-bottom: 30px;
 }

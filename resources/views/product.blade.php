@@ -5,23 +5,21 @@
 
     <div class="main-content">
 
-      {{-- {{ $idProduct}} --}}
-      {{-- Prodotto selezionato --}}
-      @foreach($pastaArray as $pasta)
-          @if($pasta["titolo"] === $idProduct)
-            <div class="pasta-details">
-              <h2> {{$pasta["titolo"]}} </h2>
-              <img class="pasta-details-img-h"src="{{$pasta["src-h"]}}" alt="" >
-              <img class="pasta-details-img-p"src="{{$pasta["src-p"]}}" alt="" >
-              <div class="pasta-details-text">{!! $pasta["descrizione"] !!}</div>
-            </div>
-          @endif
-      @endforeach
-      {{-- /Prodotto selezionato --}}
+      @if(!empty($idProduct))
+        @php
+          $idProduct -= 1;
+        @endphp
 
+        <div class="pasta-details">
+          <h2> {{$pastaArray[$idProduct]["titolo"]}} </h2>
+          <img class="pasta-details-img-h"src="{{$pastaArray[$idProduct]["src-h"]}}" alt="" >
+          <img class="pasta-details-img-p"src="{{$pastaArray[$idProduct]["src-p"]}}" alt="" >
+          <div class="pasta-details-text">{!! $pastaArray[$idProduct]["descrizione"] !!}</div>
+        </div>
+      @endif
     </div>
   </div>
 
   </body>
 </html>
-@endsection('content')
+@endsection

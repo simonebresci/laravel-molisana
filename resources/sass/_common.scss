@@ -25,6 +25,11 @@
 
 @mixin menu-ul-black-style-1{
 
+  a{
+    @include link-style-reset;
+    @include menu-li-black-style-1;
+  }
+
    li{
      @include menu-li-black-style-1;
    }

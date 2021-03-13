@@ -6,12 +6,12 @@
     <div class="main-content">
       <div class="main-content-section">
         <h2>LE LUNGHE</h2>
-        @foreach($pastaArray as $pasta)
+        @foreach($pastaArray as $index => $pasta)
           @if($pasta["tipo"]==="lunga")
             <div class="pasta">
               {{-- Link pagina prodotto --}}
               @php
-                $link = "/product/" . $pasta["titolo"];
+                $link = "/product/" . ($index + 1) ;
               @endphp
 
               <a href="{{$link}}">
@@ -25,12 +25,12 @@
       </div>
       <div class="main-content-section">
         <h2>LE CORTE</h2>
-        @foreach($pastaArray as $pasta)
+        @foreach($pastaArray as $index => $pasta)
           @if($pasta["tipo"]==="corta")
             <div class="pasta">
               {{-- Link pagina prodotto --}}
               @php
-                $link = "/product/" . $pasta["titolo"];
+                $link = "/product/" . ($index + 1) ;
               @endphp
 
               <a href="{{$link}}">
@@ -44,12 +44,12 @@
       </div>
       <div class="main-content-section">
         <h2>LE CORTISSIME</h2>
-        @foreach($pastaArray as $pasta)
+        @foreach($pastaArray as $index => $pasta)
           @if($pasta["tipo"]==="cortissima")
             <div class="pasta">
               {{-- Link pagina prodotto --}}
               @php
-                $link = "/product/" . $pasta["titolo"];
+                $link = "/product/" . ($index + 1) ;
               @endphp
 
               <a href="{{$link}}">

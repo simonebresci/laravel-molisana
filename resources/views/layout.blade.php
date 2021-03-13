@@ -19,9 +19,9 @@
           <div class="header-content">
             <img class="header-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
               <ul class="header-content-menu">
-                <li>Home</li>
-                <li>Prodotti</li>
-                <li>News</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product/">Prodotti</a></li>
+                <li><a href="/news">News</a></li>
               </ul>
           </div>
         </div>

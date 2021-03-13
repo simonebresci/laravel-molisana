@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 
 // Pagina product
-Route::get('/product/{id}', function ($id) {
+Route::get('/product/{id?}', function ($id=null) {
     $pasta = config('pasta');
 
     return view('product',
@@ -29,4 +29,15 @@ Route::get('/product/{id}', function ($id) {
                   "idProduct" => $id,
                   "pastaArray" => $pasta
                 ]);
+});
+
+// Pagina product
+Route::get('/comingsoon', function () {
+
+    return view('comingsoon');
+});
+
+// Pagina News da implementare
+Route::get('/news', function () {
+    return redirect('/comingsoon');
 });

@@ -19,9 +19,17 @@
           <div class="header-content">
             <img class="header-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
               <ul class="header-content-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/product/">Prodotti</a></li>
-                <li><a href="/news">News</a></li>
+                <li class="@php if($idxMenuHeader===1){echo "active";} @endphp">
+                  <a href="/">Home</a>
+                </li>
+                <li class="@php if($idxMenuHeader===2){echo "active";} @endphp">
+                  <a href="/product/">Prodotti</a>
+                </li>
+                <li class="@php if($idxMenuHeader===3){echo "active";} @endphp">
+                  <a href="/news">News</a>
+                </li>
+                {{-- <li><a href="/product/">Prodotti</a></li>
+                <li><a href="/news">News</a></li> --}}
               </ul>
           </div>
         </div>

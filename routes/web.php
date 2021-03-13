@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $pasta = config('pasta');
 
-    return view('homepage', ['pastaArray' => $pasta]);
+    return view('homepage', ['pastaArray' => $pasta,
+                             'idxMenuHeader' => 1]);
 });
 
 
@@ -31,14 +32,18 @@ Route::get('/product/{id?}', function ($id=null) {
     return view('product',
                 [
                   "idProduct" => $id,
-                  "pastaArray" => $pasta
+                  "pastaArray" => $pasta,
+                  'idxMenuHeader' => 2
                 ]);
 });
 
 // Pagina product
 Route::get('/comingsoon', function () {
 
-    return view('comingsoon');
+    return view('comingsoon',
+                [
+                  'idxMenuHeader' => 3
+                ]);
 });
 
 // Pagina News da implementare

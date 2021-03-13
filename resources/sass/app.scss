@@ -96,6 +96,9 @@ header{
     li{
       display: inline-block;
       // margin-right: 45px;
+      .active{
+        background-color: red;
+      }
     }
   }
 

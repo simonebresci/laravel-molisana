@@ -115,8 +115,14 @@ header {
 .header-content-menu i {
   color: black;
 }
+.header-content-menu .active {
+  background-color: #b2e6fc;
+}
 .header-content-menu li {
   display: inline-block;
+}
+.header-content-menu li .active {
+  background-color: red;
 }
 .header-content-menu li:hover {
   transition: opacity 0.4s, text-shadow 0.2s;

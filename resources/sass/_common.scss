@@ -37,6 +37,10 @@
    i{
      color: $colorTxtBlack1;
    }
+
+   .active{
+     background-color: $colorTxtBgBlue1;
+   }
 }
 @mixin menu-li-black-style-1{
   @include resetListBullets;

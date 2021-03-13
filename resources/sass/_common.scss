@@ -28,6 +28,7 @@
   a{
     @include link-style-reset;
     @include menu-li-black-style-1;
+    padding:0px;
   }
 
    li{

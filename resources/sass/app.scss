@@ -82,6 +82,7 @@ header{
   &-logo{
     width: 240px;
     display: block;
+    margin:60px 0px;
   }
 
   &-menu{
@@ -96,9 +97,7 @@ header{
     li{
       display: inline-block;
       // margin-right: 45px;
-      .active{
-        background-color: red;
-      }
+
     }
   }
 
@@ -149,6 +148,7 @@ header{
 // MAIN-CONTENT ****************************************************************
 .main-background{
   @include background-common;
+  background-color: $colorBgBlue1;
 }
 
 .main-content{

@@ -5,13 +5,11 @@
 
     <div class="main-content">
       <div class="work-in-progress">
+        <img src="{{asset('img/work-in-progress.png')}}">
         <h2>SITO IN COSTRUZIONE</h2>
         <p>La pagina verrà al più presto implementata.</p>
-        <img src="{{asset('img/work-in-progress.png')}}"
+
       </div>
     </div>
   </div>
-
-  </body>
-</html>
 @endsection

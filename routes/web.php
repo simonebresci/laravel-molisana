@@ -24,6 +24,10 @@ Route::get('/', function () {
 Route::get('/product/{id?}', function ($id=null) {
     $pasta = config('pasta');
 
+    if(empty($id)){
+      return redirect('/product/1');
+    }
+
     return view('product',
                 [
                   "idProduct" => $id,

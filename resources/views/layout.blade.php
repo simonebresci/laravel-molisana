@@ -40,19 +40,18 @@
             <div class="footer-content-col-1">
             <img class="footer-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
             <ul class="molisana-contatti">
-              <li>Ragione sociale</li>
-              <li>RAGIONE SOCIALE: LA MOLISANA S.P.A.</li>
-              <li>SEDE LEGALE: CONTRADA COLLE DELLE API, 100/A - 86100 - CAMPOBASSO (CB)</li>
-              <li>PEC: LAMOLISANA@PEC.IT</li>
-              <li>TEL: +39 0874 4981</li>
-              <li>FAX: +39 0874 629584</li>
-              <li>INFO@LAMOLISANA.IT</li>
-              <li>PER SEGNALAZIONI SCRIVERE A:</li>
-              <li>PER CONTATTARE L'AREA COMMERCIALE:</li>
-              <li>COMMERCIALE@LAMOLISANA.IT</li>
-              <li>PER CONTATTARE L'AREA EXPORT:</li>
-              <li>EXPORT@LAMOLISANA.IT</li>
-              <li>DATI AZIENDALI: LEGGI DI PIÙ</li>
+              <li>ragione sociale: la molisana s.p.a.</li>
+              <li>sede legale: contrada colle delle api, 100/a - 86100 - campobasso (cb)</li>
+              <li>pec: lamolisana@pec.it</li>
+              <li>tel: +39 0874 4981</li>
+              <li>fax: +39 0874 629584</li>
+              <li>info@lamolisana.it</li>
+              <li>per segnalazioni scrivere a:</li>
+              <li>per contattare l'area commerciale:</li>
+              <li>commerciale@lamolisana.it</li>
+              <li>per contattare l'area export:</li>
+              <li>export@lamolisana.it</li>
+              <li>dati aziendali: leggi di più</li>
             </ul>
             </div>
             <div class="footer-content-col-2">

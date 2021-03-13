@@ -12,11 +12,15 @@
 
 .pasta{
   display: inline-block;
-  width: calc(100% / 3 - 10px);
-  width: 460px;
+  width: calc(100% / 3 - 20px);
   height: 280px;
-  color: blue;
-  background-size: cover;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  a:hover &-img{
+    @include hover-standard-style1;
+    box-shadow: 2px 2px 10px $colorTxtBgBlue2;
+  }
 
   &-img{
     width: 100%;
@@ -109,9 +113,28 @@ header{
 .footer-content{
   @include content-style;
   display: flex;
+  padding-top: 90px;
+  padding-bottom: 140px;
+
+  &-logo{
+    margin-bottom: 15px;
+  }
+
   &-col-1, &-col-2, &-col-3{
     width: calc(100% / 3);
-    border: 1px solid black;
+    padding-right: 30px;
+  }
+
+  .molisana-contatti, .menu-pastificio, .menu-prodotti, .menu-collezioni{
+    @include menu-ul-grey-style-1;
+  }
+
+  .menu-pastificio, .menu-prodotti, .menu-collezioni{
+    margin-bottom: 30px;
+
+    li{
+      margin-bottom: 15px;
+    }
   }
 
 }
@@ -138,6 +161,8 @@ header{
   }
 
 }
+
+
 
 
 // *****************************************************************************

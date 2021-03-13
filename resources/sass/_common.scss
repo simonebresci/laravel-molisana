@@ -35,7 +35,6 @@
 }
 @mixin menu-li-black-style-1{
   @include resetListBullets;
-  display: inline-block;
   height: 100%;
   line-height: 80px;
   padding: 0px 20px;
@@ -43,8 +42,44 @@
   cursor:pointer;
   color: $colorTxtBlack1;
 }
-//  ****************************************************************************
 
+
+@mixin menu-ul-grey-style-1{
+
+   .title{
+     font-size: 22px;
+     font-weight: bold;
+     margin-bottom: 30px;
+   }
+
+   a{
+     @include link-style-reset;
+     @include menu-li-grey-style-1;
+   }
+
+   li{
+     @include menu-li-grey-style-1;
+   }
+
+   i{
+     color: $colorTxtBlack1;
+   }
+}
+@mixin menu-li-grey-style-1{
+  @include resetListBullets;
+  margin-bottom: 5px;
+  color: $colorTxtGrey1;
+}
+//  ****************************************************************************
+//  LINKS **********************************************************************
+// REMOVE DEFAULT STYLE FROM LINKS
+@mixin link-style-reset{
+  text-decoration: none;
+
+  a{
+    text-decoration: none;
+  }
+}
 // HOVER ***********************************************************************
 @mixin hover-standard-common{
   transition: opacity 0.4s, text-shadow 0.2s;
@@ -55,5 +90,6 @@
 @mixin hover-standard-style1{
   @include hover-standard-common;
   opacity: 70%;
+
 }
 // *****************************************************************************

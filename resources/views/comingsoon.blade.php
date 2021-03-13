@@ -8,7 +8,6 @@
         <img src="{{asset('img/work-in-progress.png')}}">
         <h2>SITO IN COSTRUZIONE</h2>
         <p>La pagina verrà al più presto implementata.</p>
-
       </div>
     </div>
   </div>

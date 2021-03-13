@@ -1,22 +1,22 @@
 // MINIMUM WIDTH BACKGROUND
 @mixin background-common{
-  min-width: 1139px;
+  min-width: 1400px;
   // MEDIA QUERY - LG
-  @media screen and (max-width: 1140px) {
-    min-width: 961px;
-    max-width: 1140px;
-  }
+  // @media screen and (max-width: 1140px) {
+  //   min-width: 961px;
+  //   max-width: 1140px;
+  // }
   // /MEDIA QUERY - LG
 }
 
 @mixin content-style{
   max-width: 1400px;
-  min-width: 1139px;
+  // min-width: 1139px;
   margin: 0 auto;
-  @media screen and (max-width: 1140px) {
-    width: 80%;
-    min-width: 961px;
-  }
+  // @media screen and (max-width: 1140px) {
+  //   width: 80%;
+  //   min-width: 961px;
+  // }
 }
 // MENU ***********************************************************************
 @mixin resetListBullets{
@@ -52,7 +52,6 @@
   cursor:pointer;
   color: $colorTxtBlack1;
 }
-
 
 @mixin menu-ul-grey-style-1{
 

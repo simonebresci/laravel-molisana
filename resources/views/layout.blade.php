@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
     <!-- Inizializzazione larghezza device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,6 +17,7 @@
         <div class="header-background">
           <div class="header-content">
             <img class="header-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
+              {{-- MENU CON ANIMAZIONE ELEMENTO SELEZIONATO --}}
               <ul class="header-content-menu">
                 <li class="@php if($idxMenuHeader===1){echo "active";} @endphp">
                   <a href="/">Home</a>
@@ -28,8 +28,6 @@
                 <li class="@php if($idxMenuHeader===3){echo "active";} @endphp">
                   <a href="/news">News</a>
                 </li>
-                {{-- <li><a href="/product/">Prodotti</a></li>
-                <li><a href="/news">News</a></li> --}}
               </ul>
           </div>
         </div>
@@ -45,6 +43,7 @@
       <footer>
         <div class="footer-background">
           <div class="footer-content">
+            {{-- FOOTER - COLONNA 1 --}}
             <div class="footer-content-col-1">
             <img class="footer-content-logo" src="{{ asset('img/logo.png') }}" alt="tag">
             <ul class="molisana-contatti">
@@ -62,6 +61,9 @@
               <li>dati aziendali: leggi di più</li>
             </ul>
             </div>
+            {{-- /FOOTER - COLONNA 1 --}}
+
+            {{-- FOOTER - COLONNA 2 --}}
             <div class="footer-content-col-2">
               <ul class="menu-pastificio">
                 <li class="title">PASTIFICIO</li>
@@ -86,6 +88,9 @@
                 <li><a href="#">Le Semole</a></li>
               </ul>
             </div>
+            {{-- /FOOTER - COLONNA 2 --}}
+
+            {{-- FOOTER - COLONNA 3 --}}
             <div class="footer-content-col-3">
               <ul class="menu-collezioni">
                 <li class="title">COLLEZIONE DA CHEF</a></li>
@@ -94,6 +99,7 @@
                 <li><a href="#">Quadrate</a></li>
               </ul>
             </div>
+            {{-- /FOOTER - COLONNA 3 --}}
 
           </div>
         </div>

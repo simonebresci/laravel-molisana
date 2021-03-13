@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home sito
 Route::get('/', function () {
+    // Array pasta
     $pasta = config('pasta');
 
     return view('homepage', ['pastaArray' => $pasta,
@@ -25,6 +27,7 @@ Route::get('/', function () {
 Route::get('/product/{id?}', function ($id=null) {
     $pasta = config('pasta');
 
+    // Reindirizza sul primo prodottto se id non specificato
     if(empty($id)){
       return redirect('/product/1');
     }
@@ -37,7 +40,7 @@ Route::get('/product/{id?}', function ($id=null) {
                 ]);
 });
 
-// Pagina product
+// Pagina coming soon - reindirizza pagine non esistenti qui
 Route::get('/comingsoon', function () {
 
     return view('comingsoon',

@@ -107,6 +107,7 @@ header{
 }
 
 .main-background-2{
+  @include background-common;
   background-color: $colorTxtBgBlue3;
 }
 

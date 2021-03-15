@@ -132,6 +132,7 @@ header {
 }
 
 .main-background-2 {
+  min-width: 1400px;
   background-color: #b7dae5;
 }
 
